@@ -1,36 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name</title>
-
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Your tagline or brief description</p>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  </head>
+  <body>
+    <header class="bg-gray-800 text-white text-center py-10">
+      <img src="profile_pic.png" alt="Your profile picture" class="w-40 h-40 rounded-full mx-auto">
+      <h1 class="text-4xl font-bold pt-4">Chris Papastamos</h1>
+      <p class="text-lg">Computer Sciense undergraduate student</p>
     </header>
 
-    <section id="about-me">
-        <h2>About Me</h2>
-        <p>Write a brief introduction about yourself, your background, and your passions.</p>
-    </section>
+    <main class="container mx-auto px-4 py-6">
+      <section id="about-me" class="mb-10">
+        <h2 class="text-3xl font-bold text-center">About Me</h2>
+        <p class="text-lg text-gray-700 mt-4">Im Chris, a undergraduate student at the Computer Science Department at University of Crete. I am currently at my 3rd year of college studies. My interests are computer networks and web programming.</p>
+        <p class="text-lg text-gray-700 mt-4">I know many programming languages, but i am most confident with C and Python.</p>
+      </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Skill 1</li>
-            <li>Skill 2</li>
-            <li>Skill 3</li>
-            <li>Skill 4</li>
+      <section id="projects" class="mb-10">
+        <h2 class="text-3xl font-bold text-center">Projects</h2>
+        <div class="flex flex-wrap justify-center gap-4 mt-4">
+          <div class="project-card">
+            <img src="project1.jpg" alt="Project 1" class="w-full h-auto">
+            <div class="project-details py-4 px-4">
+              <h3 class="font-bold text-lg">Web Programming Project (HY359)</h3>
+              <p class="text-gray-700 mt-2">
+                <p>• Developed a web application for managing doctor's appointments using Java, Tomcat, and XAMPP.</p>
+                <p>• Created a database to store appointment information.</p>
+                <p>• Implemented Java servlets to handle user requests and interactions.</p>
+              </p>
+              <a href="https://github.com/papastam/HY359_project" class="bg-blue-500 text-white py-2 px-4 rounded mt-4">View Project</a>
+            </div>
+          </div>
+      
+          <div class="project-card">
+            <img src="project2.jpg" alt="Project 2" class="w-full h-auto">
+            <div class="project-details py-4 px-4">
+              <h3 class="font-bold text-lg">Project 2</h3>
+              <p class="text-gray-700 mt-2">A brief description of Project 2.</p>
+              <a href="#" class="bg-blue-500 text-white py-2 px-4 rounded mt-4">View Project</a>
+            </div>
+          </div>
+      
+          <div class="project-card">
+            <img src="project3.jpg" alt="Project 3" class="w-full h-auto">
+            <div class="project-details py-4 px-4">
+              <h3 class="font-bold text-lg">Project 3</h3>
+              <p class="text-gray-700 mt-2">A brief description of Project 3.</p>
+              <a href="#" class="bg-blue-500 text-white py-2 px-4 rounded mt-4">View Project</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="mb-10">
+        <h2 class="text-3xl font-bold text-center">Skills</h2>
+        <ul class="flex flex-wrap justify-center gap-4 mt-4">
+          <li class="bg-gray-200 py-2 px-4 rounded text-gray-700">Skill 1</li>
+          <li class="bg-gray-200 py-2 px-4 rounded text-gray-700">Skill 2</li>
+          <li class="bg-gray-200 py-2 px-4 rounded text-gray-700">Skill 3</li>
+          <li class="bg-gray-200 py-2 px-4 rounded text-gray-700">Skill 4</li>
         </ul>
-    </section>
+      </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Provide your contact information or links to your social media profiles.</p>
-    </section>
-</body>
-</html>
+      <section id="contact" class="text-center">
+        <h2 class="text-3xl font-bold text-center">Contact</h2>
+        <p class="text-lg text-gray-700 mt-4">Provide your contact information or links to your social media profiles.</p>
+        <div class="flex justify-center mt-4">
+          <a href="#" class="bg-blue-500 text-white py-2 px-4 rounded mr-4">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <span class="ml-2">LinkedIn</span>
+          </a>
+          <a href="#" class="bg-blue-500 text-white py-2 px-4 rounded mr-4">
+            <i class="fa-solid fa-envelope"></i>
+            <span class="ml-2">Email</span>
+          </a>
+          <a href="#" class="bg-blue-500 text-white py-2 px-4 rounded mr-4">
+            <i class="fa-brands fa-github"></i>
+            <span class="ml-2">GitHub</span>
+          </a>
+          <a href="#" class="bg-blue-500 text-white py-2 px-4 rounded">
+            <i class="fa-brands fa-docker"></i>
+            <span class="ml-2">Dockerhub</span>
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
+  </html>

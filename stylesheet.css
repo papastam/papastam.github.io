@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #282a36;
+  color: white;
+  padding: 2rem;
+}
+
+.header img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 2rem;
+}
+
+.header p {
+  font-size: 1.2rem;
+  margin-left: 2rem;
+}
+
